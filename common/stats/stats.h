@@ -56,7 +56,7 @@
 
 #pragma once
 
-#include <folly/detail/CacheLocality.h>
+#include <folly/concurrency/CacheLocality.h>
 #include <folly/ThreadLocal.h>
 #include <folly/stats/Histogram.h>
 #include <folly/stats/MultiLevelTimeSeries.h>

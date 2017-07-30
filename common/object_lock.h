@@ -19,7 +19,7 @@
 #pragma once
 
 #include <boost/intrusive/list.hpp>
-#include <folly/detail/CacheLocality.h>
+#include <folly/concurrency/CacheLocality.h>
 #include <folly/MPMCQueue.h>
 #include <cstddef>
 #include <functional>

@@ -168,7 +168,7 @@ void RocksDBReplicator::ReplicatedDB::pullFromUpstream() {
         if (t.hasException()) {
           delay_next_pull = true;
           try {
-            t.exception().throwException();
+            t.exception().throw_exception();
           } catch (const ReplicateException& ex) {
             LOG(ERROR) << "ReplicateException: " << static_cast<int>(ex.code)
                        << " " << ex.msg;

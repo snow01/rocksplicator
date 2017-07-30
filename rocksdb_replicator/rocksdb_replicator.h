@@ -33,9 +33,11 @@
 #include "rocksdb_replicator/max_number_box.h"
 #include "rocksdb_replicator/non_blocking_condition_variable.h"
 #include "rocksdb_replicator/thrift/gen-cpp2/Replicator.h"
-#include "folly/SocketAddress.h"
-#include "rocksdb/db.h"
-#include "thrift/lib/cpp2/server/ThriftServer.h"
+#include <folly/SocketAddress.h>
+#include <folly/MoveWrapper.h>
+#include <folly/ExceptionWrapper.h>
+#include <rocksdb/db.h>
+#include <thrift/lib/cpp2/server/ThriftServer.h>
 
 namespace folly {
   class Executor;

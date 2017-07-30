@@ -2,15 +2,21 @@ cmake_minimum_required(VERSION 2.8)
 
 # Build thrift file
 set(GEN_FILES
-    "gen-cpp2/dummy_service_types.tcc"
-    "gen-cpp2/dummy_service_types.cpp"
-    "gen-cpp2/dummy_service_types.h"
-    "gen-cpp2/dummy_service_constants.h"
-    "gen-cpp2/dummy_service_constants.cpp"
-    "gen-cpp2/DummyService.tcc"
-    "gen-cpp2/DummyService.cpp"
-    "gen-cpp2/DummyService.h"
-    "gen-cpp2/DummyService_client.cpp"
+"gen-cpp2/DummyService_client.cpp"
+"gen-cpp2/dummy_service_constants.h"
+"gen-cpp2/DummyService_custom_protocol.h"
+"gen-cpp2/dummy_service_data.h"
+"gen-cpp2/DummyService_processmap_binary.cpp"
+"gen-cpp2/DummyService.tcc"
+"gen-cpp2/dummy_service_types_custom_protocol.h"
+"gen-cpp2/dummy_service_types.tcc"
+"gen-cpp2/dummy_service_constants.cpp"
+"gen-cpp2/DummyService.cpp"
+"gen-cpp2/dummy_service_data.cpp"
+"gen-cpp2/DummyService.h"
+"gen-cpp2/DummyService_processmap_compact.cpp"
+"gen-cpp2/dummy_service_types.cpp"
+"gen-cpp2/dummy_service_types.h"
     )
 
 

@@ -2,15 +2,22 @@ cmake_minimum_required(VERSION 3.1)
 
 # Build thrift file
 set(GEN_FILES
-    "gen-cpp2/counter_types.tcc"
-    "gen-cpp2/counter_types.cpp"
-    "gen-cpp2/counter_types.h"
-    "gen-cpp2/counter_constants.h"
-    "gen-cpp2/counter_constants.cpp"
-    "gen-cpp2/Counter.tcc"
-    "gen-cpp2/Counter.cpp"
-    "gen-cpp2/Counter.h"
-    "gen-cpp2/Counter_client.cpp")
+"gen-cpp2/Counter_client.cpp"
+"gen-cpp2/counter_constants.h"
+"gen-cpp2/Counter_custom_protocol.h"
+"gen-cpp2/counter_data.h"
+"gen-cpp2/Counter_processmap_binary.cpp"
+"gen-cpp2/Counter.tcc"
+"gen-cpp2/counter_types_custom_protocol.h"
+"gen-cpp2/counter_types.tcc"
+"gen-cpp2/counter_constants.cpp"
+"gen-cpp2/Counter.cpp"
+"gen-cpp2/counter_data.cpp"
+"gen-cpp2/Counter.h"
+"gen-cpp2/Counter_processmap_compact.cpp"
+"gen-cpp2/counter_types.cpp"
+"gen-cpp2/counter_types.h"
+)
 
 add_custom_command(
   OUTPUT ${GEN_FILES}
